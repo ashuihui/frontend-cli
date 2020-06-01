@@ -1,0 +1,43 @@
+{
+  "name": "frontend-cli-shui",
+  "version": "0.1.9",
+  "description": "react 前端脚手架",
+  "main": "index.js",
+  "scripts": {
+    "release": "node scripts/release.js"
+  },
+  "bin": {
+    "fe-cli": "bin/index.js"
+  },
+  "keywords": [
+    "frontend",
+    "cli",
+    "脚手架"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashuihui/frontend-cli.git"
+  },
+  "author": "linshuihui",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ashuihui/frontend-cli/issues"
+  },
+  "homepage": "https://github.com/ashuihui/frontend-cli#readme",
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "commander": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^7.1.0",
+    "log-symbols": "^4.0.0",
+    "ora": "^4.0.4",
+    "semver": "^7.3.2",
+    "validate-npm-package-name": "^3.0.0"
+  },
+  "devDependencies": {
+    "standard-version": "^8.0.0"
+  }
+}
