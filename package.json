@@ -1,6 +1,6 @@
 {
   "name": "frontend-cli-shui",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "react 前端脚手架",
   "main": "index.js",
   "scripts": {
@@ -31,6 +31,7 @@
     "chalk": "^4.0.0",
     "commander": "^5.1.0",
     "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.6",
     "inquirer": "^7.1.0",
     "log-symbols": "^4.0.0",
     "ora": "^4.0.4",
