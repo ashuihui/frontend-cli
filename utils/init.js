@@ -70,6 +70,7 @@ Also, the author of frontend-cli-shui is looking for a good job!\n `
                         m:answer.device=='m',
                     },answer)
                     editfile.updateFile(config)
+                    process.exit(1);
                 }, (err) => {
                     console.error(chalk.red(`模板下载失败,Error: ${err}`));
                     process.exit(1);
