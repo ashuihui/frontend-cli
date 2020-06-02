@@ -26,7 +26,7 @@ fe-cli init <name>
 - router: 默认
 - redux: 可选
 - css-module: 默认
-- sass/less: 可选
+- sass、less: 默认
 - react ant design:可选
 - echarts:可选 
 - 适配方案选择：vw or rem
@@ -42,6 +42,8 @@ fe-cli init <name>
 - 持续集成:travis todo
 - 持续发布:webhook todo
 - docker: todo
+
+
 
 ## 模板
 - spa

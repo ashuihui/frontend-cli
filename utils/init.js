@@ -6,6 +6,7 @@ const path = require('path')
 const validateProjectName = require('validate-npm-package-name');
 const fs = require("fs");
 const git = require("./git");
+const editfile = require("./editfile");
 let init = async projectName => {
     console.log(
         chalk.green(
@@ -61,8 +62,14 @@ Also, the author of frontend-cli-shui is looking for a good job!\n `
             git.downloadTemplate(Api,projectName)
                 .then((temDir) => {
                     loading.succeed('模板下载完成');
-                    // 下载完成后,根据用户输入更新配置文件
-                    //todo
+                    let config = Object.assign({
+                        projectName:projectName,
+                        vw:answer.adapter=='vw',
+                        rem:answer.adapter=='rem',
+                        pc:answer.device=='pc',
+                        m:answer.device=='m',
+                    },answer)
+                    editfile.updateFile(config)
                 }, (err) => {
                     console.error(chalk.red(`模板下载失败,Error: ${err}`));
                     process.exit(1);

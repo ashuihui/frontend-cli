@@ -27,24 +27,24 @@ let promptList = [
         message: 'please choose this project device',
         choices: ['pc', 'm']
     },
-    {
-        type: 'list',
-        name: 'style',
-        message: 'please choose this project CSS language ',
-        choices: ['sass', 'less']
-    },
+    // {
+    //     type: 'list',
+    //     name: 'style',
+    //     message: 'please choose this project CSS language ',
+    //     choices: ['sass', 'less']
+    // },
     {
         type: 'list',
         name: 'adapter',
         message: 'please choose this project screen adapter ',
         choices: ['vw', 'rem']
     },
-    {
-        type: 'list',
-        name: 'install',
-        message: 'please choose this project install function ',
-        choices: ['npm', 'yarn']
-    },
+    // {
+    //     type: 'list',
+    //     name: 'install',
+    //     message: 'please choose this project install function ',
+    //     choices: ['npm', 'yarn']
+    // },
     // {
     //     type: 'list',
     //     name: 'install',
@@ -56,11 +56,11 @@ let promptList = [
         message: "Is project use redux？",
         name: "redux",
     },
-    {
-        type: "confirm",
-        message: "Is project use router",
-        name: "router",
-    },
+    // {
+    //     type: "confirm",
+    //     message: "Is project use router",
+    //     name: "router",
+    // },
     {
         type: "confirm",
         message: "Is project use ant design",
@@ -71,11 +71,11 @@ let promptList = [
         message: "Is project use ant echarts",
         name: "echarts",
     },
-    {
-        type: "confirm",
-        message: "Is project use ant pwa",
-        name: "pwa",
-    }
+    // {
+    //     type: "confirm",
+    //     message: "Is project use ant pwa",
+    //     name: "pwa",
+    // }
 ];
 
 
